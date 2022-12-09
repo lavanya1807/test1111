@@ -1,0 +1,18 @@
+Implode to Explode:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$string = "Helloworld. It's a beautiful day.";
+$str= implode(" ", str_split($string, 1));
+print_r($str);
+print_r(explode(" ",$str));
+?> 
+
+</body>
+</html>
+
+output:
+ H e l l o w o r l d . I t ' s a b e a u t i f u l d a y .Array ( [0] => H [1] => e [2] => l [3] => l [4] => o [5] => w [6] => o [7] => r [8] => l [9] => d [10] => . [11] => [12] => [13] => I [14] => t [15] => ' [16] => s [17] => [18] => [19] => a [20] => [21] => [22] => b [23] => e [24] => a [25] => u [26] => t [27] => i [28] => f [29] => u [30] => l [31] => [32] => [33] => d [34] => a [35] => y [36] => . )
